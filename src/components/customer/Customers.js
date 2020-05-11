@@ -18,10 +18,6 @@ const Customers = () => {
     const [ customerName , setCustomerName ] = useState('')
     const [ filtered_customer , setFilteredCustomer ] = useState(state.customers)
 
-    useEffect(() => {
-      dispatch({type:SELECT_CUSTOMER})
-    }, [])
-
     const customerSearch = e => {
         e.preventDefault();
         setCurrentPage(1)

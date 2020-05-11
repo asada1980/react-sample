@@ -1,14 +1,6 @@
 import React, {useContext, useEffect} from 'react'
 
-import AppContext from '../contexts/AppContext'
-import {SELECT_HOME} from '../actions'
-
 const Home = () => {
-
-  const {dispatch} = useContext(AppContext)
-  useEffect(() => {
-    dispatch({type:SELECT_HOME})
-  })
 
     return (
       <>

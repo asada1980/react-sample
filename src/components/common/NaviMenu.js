@@ -14,7 +14,7 @@ const NaviMenu = () => {
 
   return (
       <div className="list-group">
-        <Link to="/" className={state.navimenu.home}>ホーム</Link>
+        <Link to="/" className={state.navimenu.home} onClick={() => {dispatch({type:SELECT_HOME})}}>ホーム</Link>
         <Link to="/Customers" className={state.navimenu.customer}>顧客情報</Link>
         <Link to="/Contract" className={state.navimenu.contract} >契約情報</Link>
         <Link to="/Company" className={state.navimenu.company}>自社情報</Link>
