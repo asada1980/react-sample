@@ -2,9 +2,9 @@ import React, {useReducer, useEffect} from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Footer from './Footer'
-import Header from './Header'
-import NaviMenu from './NaviMenu'
+import Footer from './common/Footer'
+import Header from './common/Header'
+import NaviMenu from './common/NaviMenu'
 
 import AppRoute from './AppRoute'
 
@@ -18,7 +18,12 @@ const App = () => {
 
   const appState = localStorage.getItem(APP_KEY)
   let initialState = appState ? JSON.parse(appState) : AppInitialState
-
+  initialState.navimenu = {
+    home: '',
+    customer: '',
+    contract: '',
+    company: ''
+  }
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {

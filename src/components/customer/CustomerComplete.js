@@ -2,7 +2,7 @@ import React from 'react'
 
 import useReactRouter from 'use-react-router';
 
-import ProcessStep from './ProcessStep'
+import ProcessStep from '../common/ProcessStep'
 
 const CustomerConfirm = () => {
 

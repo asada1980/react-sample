@@ -4,8 +4,7 @@ const numbering = (state = 0, action) => {
 
     switch(action.type) {
         case COUNT_UP:
-            state = state + 1
-            return state
+            return state + 1
         default: 
             return state
     }

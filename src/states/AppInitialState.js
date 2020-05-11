@@ -11,5 +11,22 @@ export default {
         other: '',
     },
     customers: [],
-    nowCustomerMaxId: 0
+    filtered_customer: [],
+    nowCustomerMaxId: 0,
+    company: {
+        name: '',
+        person: '',
+        zipCode1: '',
+        zipCode2: '',
+        prefecture: '',
+        city: '',
+        town: '',
+        other: ''
+    },
+    navimenu: {
+        home: '',
+        customer: '',
+        contract: '',
+        company: ''
+    }
 }

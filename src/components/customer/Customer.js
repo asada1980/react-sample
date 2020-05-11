@@ -1,14 +1,15 @@
 import React, { useContext } from 'react'
 
-import { DELETE_CUSTOMER_LIST } from '../actions'
-import AppContext from '../contexts/AppContext'
+import { DELETE_CUSTOMER_LIST } from '../../actions'
+import AppContext from '../../contexts/AppContext'
 
-const Customer = ({ index, customer }) => {
+const Customer = ({ index, customer, reload }) => {
     const { dispatch } = useContext(AppContext)
     const id = customer.id
     const handleClickDeleteButton = () => {
         if (window.confirm(`顧客ID(id=${id})を削除してもよろしいですか？`)) { 
             dispatch({type: DELETE_CUSTOMER_LIST, id})
+            reload()
         }
     }
     return (

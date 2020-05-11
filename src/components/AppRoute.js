@@ -3,12 +3,12 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 
 import Home from './Home'
-import Customers from './Customers'
+import Customers from './customer/Customers'
+import CustomerRegist from './customer/CustomerRegist'
+import CustomerConfirm from './customer/CustomerConfirm'
+import CustomerComplete from './customer/CustomerComplete'
 import Contract from './Contract'
-import Company from './Company'
-import CustomerRegist from './CustomerRegist'
-import CustomerConfirm from './CustomerConfirm'
-import CustomerComplete from './CustomerComplete'
+import Company from './company/Company'
 
 const AppRoute = () => {
     return (

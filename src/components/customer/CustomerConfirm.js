@@ -2,12 +2,12 @@ import React, {useContext} from 'react'
 
 import useReactRouter from 'use-react-router';
 
-import ProcessStep from './ProcessStep'
-import AppContext from '../contexts/AppContext'
+import ProcessStep from '../common/ProcessStep'
+import AppContext from '../../contexts/AppContext'
 
-import {ADD_CUSTOMER_LIST, COUNT_UP} from '../actions'
+import {ADD_CUSTOMER_LIST, COUNT_UP} from '../../actions'
 
-import {numberingCustomer} from '../utilitys/numberingUtil'
+import {numberingCustomer} from '../../utilitys/numberingUtil'
 
 const CustomerConfirm = () => {
 
